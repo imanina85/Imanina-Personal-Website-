@@ -1,0 +1,255 @@
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+  }
+  
+  /* Left Section: Logo and Title */
+  .header-left {
+    display: flex;
+    align-items: center; /* Align logo and title vertically */
+    gap: 20px; /* Space between logo and title */
+    margin-left: -100px; /* Move the entire left section to the right */
+  }
+  
+  .logo {
+    width: 75px;
+    height: auto;
+    align-items: center;
+    margin-left: 110px; /* Move the logo further left */
+  }
+  
+  .education-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px; /* Move the title further right */
+    animation: fadeIn 2s ease-out;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  /* CSS for the header and logo */
+.header-left {
+    display: flex;
+   
+  }
+  
+
+  
+  .title-logo {
+    width: 160px; /* Adjust the size of the logo */
+    height: auto; /* Keeps the aspect ratio */
+    margin-left: 250px; /* Adds space between the title and the logo */
+  }
+  
+  /* Date and Time Styling */
+#date-time {
+    position: absolute;
+    top: 150px; /* Align near the separator */
+    right: 130px; /* Matches separator's position */
+    transform: translateX(50%);
+    font-size: 17px;
+    margin-top: -100px;
+    color: rgb(125, 28, 140);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #bc84c0;
+    text-align: center;
+    line-height: 1.5; /* Add line height to space out the lines */
+}
+
+/* Styling for the day/date */
+#day-date {
+    font-size: 16px;
+}
+
+/* Styling for the time */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+  }
+  /* Add keyframes for slide-in and slide-out animations */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Add animations to the title and title logo */
+  .education-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+    white-space: nowrap;
+    animation: slideIn 2s ease-out; /* Slide in when the page loads */
+  }
+  
+  .title-logo {
+    width: 160px;
+    height: auto;
+    margin-left: 250px;
+    animation: slideIn 2s ease-out; /* Slide in when the page loads */
+  }
+  
+  /* Example for triggering slide-out animation (optional) */
+  .title-logo.slide-out,
+  .education-title.slide-out {
+    animation: slideOut 1s ease-in;
+  }
+  /* Mini Gallery Styling */
+.mini-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between gallery items */
+    margin: 30px 0;
+    padding: 0;
+  }
+  
+  .gallery-item {
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .video-title {
+    font-size: 20px;
+    color: #6A0572;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .watch-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9));
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .watch-now:hover {
+    background: linear-gradient(90deg, rgba(255, 105, 180, 0.9), rgba(217, 54, 168, 0.9));
+  }
+  /* Additional Gallery Section */
+.additional-gallery {
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.more-images-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.more-images-btn:hover {
+  background-color: #45a049;
+}
+
+.more-images {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.more-images img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.more-images img:hover {
+  transform: scale(1.05);
+}
+/* Title Styling */
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(75, 41, 125);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* Image Gallery */
+.images-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10%;
+}
+
+.images-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
