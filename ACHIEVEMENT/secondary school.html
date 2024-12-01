@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My Family</title>
+  <link rel="stylesheet" href="css/secondary.css">
+</head>
+<body>
+    
+
+  <!-- Header Section -->
+<header>
+  <div class="header-left">
+    <img src="images achievement/ema logo.gif.gif" alt="Family Logo" class="logo">
+    <!-- Add the logo image after the title -->
+    <img src="images achievement/logo stf.png" alt="Logo" class="title-logo">  <!-- New logo here -->
+  </div>
+    <h1 class="education-title">Secondary <sub> school </sub> Achievement </h1>
+  </div>
+  
+</div>
+<!-- Date and Time will be displayed here -->
+<div id="date-time">
+    <div id="day-date"></div>
+    <div id="time"></div>
+  </div>
+  
+  <script>
+    // Function to update the date and time every second
+  function updateDateTime() {
+      const now = new Date();
+      const optionsDate = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+      };
+      const optionsTime = {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+      };
+  
+      // Set the day/date and time
+      document.getElementById('day-date').textContent = now.toLocaleDateString('en-US', optionsDate);
+      document.getElementById('time').textContent = now.toLocaleTimeString('en-US', optionsTime);
+  }
+  
+  // Update every second
+  setInterval(updateDateTime, 1000);
+  updateDateTime(); // Initialize immediately
+  </script>
+</header>
+<!-- Title Section -->
+<section class="content-section">
+  <h2 class="section-title">Form 1</h2>
+
+  <!-- Table Section -->
+  <table class="achievement-table">
+    <tr>
+      <th>Uniformed Units</th>
+      <th>Sport</th>
+      <th>Club</th>
+    </tr>
+    <tr>
+      <td>Puteri Islam</td>
+      <td>Hand Ball</td>
+      <td>Dance</td>
+    </tr>
+
+  </table>
+
+<!-- Images with Text Section -->
+<section class="image-text-section">
+  <div class="image-with-text">
+    <img src="images achievement/sijil 1.jpeg" alt="Image 1" class="image">
+    <div class="text-content">
+      <h3>Advanced Zoology Agriculture for Learning</h3>
+      <p>Universiti Malaya</p>
+    </div>
+</section>
+<!-- Line Separator -->
+<div class="line-separator"></div>
+
+<!-- Title Section -->
+<section class="content-section">
+  <h3 class="section-title">Form 2</h3>
+<!-- Images with Text Section -->
+<section class="image-text-section">
+  <!-- First Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil 2.jpeg" alt="Image 1" class="image">
+    <div class="text-content">
+      <h3>Naib Johan Pertandingan Seni Tarian Tradisional Kreatif</h3>
+      <p>10 Mac 2018</p>
+      <p>Sekolah Sultan Alam Shah</p>
+    </div>
+  </div>
+
+  <!-- Second Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil 3.jpeg" alt="Image 2" class="image">
+    <div class="text-content">
+      <h3>Anugerah Emas Pertandingan Seni Tarian Tradisional Kreatif Sekolah-sekolah Berasrama Penuh Peringkat Kebangsaan 2018</h3>
+      <p>15 Mac 2018</p>
+      <p>Sekolah Sultan Alam Shah</p>
+    </div>
+  </div>
+
+  <!-- Third Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil 4.jpeg" alt="Image 3" class="image">
+    <div class="text-content">
+      <h3>Tempat Ketiga Pertandingan Tarian Tradisional Zapin Johor Fiesta Kokurikulum 2018 Peringkat Kebangsaan
+      <p>14 Julai 2018</p>
+      <p>SMK Sultan Ismail</p>
+    </div>
+  </div>
+  
+  <!-- Third Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil 5.jpeg" alt="Image 3" class="image">
+    <div class="text-content">
+      <h3>Get Into Rugby</h3>
+      <p>23 September 2018</p>
+      <p>Educity Sports Complex, JB</p>
+    </div>
+  </div>
+</section>
+<!-- Line Separator -->
+<div class="line-separator"></div>
+
+<!-- Title Section -->
+<section class="content-section">
+  <h3 class="section-title">Form 3</h3>
+<!-- Images with Text Section -->
+<section class="image-text-section">
+  <!-- First Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil f3 1.jpg" alt="Image 1" class="image">
+    <div class="text-content">
+      <h3>Dance Performer at KL Tower</h3>
+      <p>26 April 2019</p>
+      <p>KL Tower</p>
+    </div>
+  </div>
+
+  <!-- Second Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil f3 2.jpg" alt="Image 2" class="image">
+    <div class="text-content">
+      <h3>Tempat Ketiga Pertandingan Seni Tarian Tradisional Kreatif Sekolah-sekolah Berasrama Penuh Peringkat Kebangsaan 2019</h3>
+      <p>27 April 2019</p>
+      <p>Sekolah Sultan Alam Shah, Putrajaya</p>
+    </div>
+  </div>
+
+  <!-- Third Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil f3 3.jpg" alt="Image 3" class="image">
+    <div class="text-content">
+      <h3>Sijil Penyertaan Pertandingan Seni Tarian Tradisional Kreatif Sekolah-sekolah Berasrama Penuh Peringkat Kebangsaan 2019
+      <p>27 April 2019</p>
+      <p>Sekolah Sultan Alam Shah, Putrajaya</p>
+    </div>
+  </div>
+  
+  <!-- Third Image -->
+  <div class="image-with-text">
+    <img src="images achievement/sijil f3 4.jpg" alt="Image 3" class="image">
+    <div class="text-content">
+      <h3>Festibal Budaya Anak Bangsa, Exchange Culture</h3>
+      <p>30 November - 1 Disember 2019</p>
+      <p>Jakarta</p>
+    </div>
+  </div>
+</section>
+
+<!-- Line Separator -->
+<div class="line-separator"></div>
+
+
+<!-- Title Section -->
+<section class="content-section">
+  <h3 class="section-title">Form 4</h3>
+<!-- Images with Text Section -->
+<section class="image-text-section">
+  <!-- First Image -->
+  <div class="image-with-text">
+    <img src="images achievement/f4 1.jpg" alt="Image 1" class="image">
+    <div class="text-content">
+      <h3>Jauhan Tun Fatimah Fund Raising Concert</h3>
+      <p>13 March 2020</p>
+      <p>Permaisuri Zarith Sofea Opera House</p>
+    </div>
+  </div>
+
+  <!-- Second Image -->
+  <div class="image-with-text">
+    <img src="images achievement/f4 2.jpg" alt="Image 2" class="image">
+    <div class="text-content">
+      <h3>Sijil Penyertaan Fasih Digital anjuran SSTP, JPN Selangor</h3>
+      <p>1 April 2020</p>
+      <p>JPN Selangor</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Line Separator -->
+<div class="line-separator"></div>
+
+
+<!-- Title Section -->
+<section class="content-section">
+  <h3 class="section-title">Form 5</h3>
+<!-- Images with Text Section -->
+<section class="image-text-section">
+  <!-- First Image -->
+  <div class="image-with-text">
+    <img src="images achievement/f5 1.jpg" alt="Image 1" class="image">
+    <div class="text-content">
+      <h3>Anugerah Emas e-Kuiz Sofbol</h3>
+      <p>18 Jun 2021</p>
+      <p>Sekolah Tun Fatimah</p>
+    </div>
+  </div>
+
+  <!-- Second Image -->
+  <div class="image-with-text">
+    <img src="images achievement/f5 2.jpg" alt="Image 2" class="image">
+    <div class="text-content">
+      <h3>Sijil Penyertaan Kuiz Cabaran Minda Sihat Peringkat Kebangsaan</h3>
+      <p>13 JUlai 2021</p>
+      <p>JPN Kedah</p>
+    </div>
+  </div>
+<!-- First Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 3.jpg" alt="Image 1" class="image">
+  <div class="text-content">
+    <h3>Webinar Penggunaan Teknologi Solar</h3>
+    <p>14 Ogos 2021</p>
+    <p>Jabatan Sains dan Matematik, SMK Permas Jaya 2</p>
+  </div>
+</div>
+
+<!-- Second Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 4.jpg" alt="Image 2" class="image">
+  <div class="text-content">
+    <h3>Sijil Penyertaan Bengkel Tulisan JAwi 2021</h3>
+    <p>11 Jun 2021</p>
+    <p>JPN Selangor</p>
+  </div>
+</div>
+<!-- First Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 5.jpg" alt="Image 1" class="image">
+  <div class="text-content">
+    <h3>Webinar Senaman, Kecergasan dan Kesihatan; Slot 3: Pendidikan Kesihatan Reproduktif dan Sosial</h3>
+    <p>16 Jun 2021</p>
+    <p>Faculty of Social Sciences and Humanities, UTM</p>
+  </div>
+</div>
+
+<!-- Second Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 6.jpg" alt="Image 2" class="image">
+  <div class="text-content">
+    <h3>Sijil Penyertaan Kiblat Istiwa'A'zam: Senang ke Susah</h3>
+    <p>28 May 2021</p>
+    <p>JPN Selangor</p>
+  </div>
+</div>
+<!-- First Image -->
+<div class="image-with-text">
+<img src="images achievement/f5 7.jpg" alt="Image 1" class="image">
+<div class="text-content">
+  <h3>Webinar Senaman, Kecergasan dan Kesihatan; Slot 4: Pengurusan mental dan emosi atlet</h3>
+  <p>23 Jun 2021</p>
+  <p>UTM Skudai</p>
+</div>
+</div>
+
+<!-- Second Image -->
+<div class="image-with-text">
+<img src="images achievement/f5 8.jpg" alt="Image 2" class="image">
+<div class="text-content">
+  <h3>Sijil Penyertaan Kempen Kesihatan Diabetes</h3>
+  <p>5 Jun 2021</p>
+  <p>SMK Sarjana Muda</p>
+</div>
+</div>
+<!-- First Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 9.jpg" alt="Image 1" class="image">
+  <div class="text-content">
+    <h3>Webinar Bijak Tatabahasa Bersama Munsyi; Siri 1</h3>
+    <p>24 March 2021</p>
+    <p>PPD Manjung</p>
+  </div>
+</div>
+
+<!-- Second Image -->
+<div class="image-with-text">
+  <img src="images achievement/f5 10.jpg" alt="Image 2" class="image">
+  <div class="text-content">
+    <h3>Sijil Penyertaan Keep On Track (KOT): Aspirasi Menara Gading</h3>
+    <p>3 April 2021</p>
+    <p>YouTube Live</p>
+  </div>
+</div>
+<!-- First Image -->
+<div class="image-with-text">
+<img src="images achievement/f5 11.jpg" alt="Image 1" class="image">
+<div class="text-content">
+  <h3>Sijil Penyertaan Aplikasi Terapi Seni Dalam Menguruskan Stress</h3>
+  <p>16 March 2021</p>
+  <p>Permaisuri Zarith Sofea Opera House</p>
+</div>
+</div>
+
+<!-- Second Image -->
+<div class="image-with-text">
+<img src="images achievement/f5 12.jpg" alt="Image 2" class="image">
+<div class="text-content">
+  <h3>Sijil Penyertaan Matematik Tambahan Sijil Akademi Youtuber 2021</h3>
+  <p>13 Mac 2021</p>
+  <p>Selangor</p>
+</div>
+</div>
+</section>
+<!-- Line Separator -->
+<div class="line-separator"></div>
+

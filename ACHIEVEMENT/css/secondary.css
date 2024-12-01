@@ -1,0 +1,299 @@
+/* Remove default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across all elements */
+}
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+  }
+  
+  /* Left Section: Logo and Title */
+  .header-left {
+    display: flex;
+    align-items: center; /* Align logo and title vertically */
+    gap: 20px; /* Space between logo and title */
+    margin-left: 30px; /* Move the entire left section to the right */
+  }
+  
+  .logo {
+    width: 75px;
+    height: auto;
+    align-items: center;
+    margin-left: -10px; /* Move the logo further left */
+  }
+  
+  .education-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    margin-right: 500px; /* Move the title further right */
+    animation: fadeIn 2s ease-out;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  /* CSS for the header and logo */
+.header-left {
+    display: flex;
+    align-items: center; /* Aligns the title and logo horizontally */
+  }
+  
+
+  
+  .title-logo {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto; /* Keeps the aspect ratio */
+    margin-left: 180px; /* Adds space between the title and the logo */
+    gap: 20px;
+  }
+  
+  /* Date and Time Styling */
+#date-time {
+    position: absolute;
+    top: 150px; /* Align near the separator */
+    right: 130px; /* Matches separator's position */
+    transform: translateX(50%);
+    font-size: 17px;
+    margin-top: -100px;
+    color: rgb(125, 28, 140);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #bc84c0;
+    text-align: center;
+    line-height: 1.5; /* Add line height to space out the lines */
+}
+
+/* Styling for the day/date */
+#day-date {
+    font-size: 16px;
+}
+
+/* Styling for the time */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+    color: #0B3D91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+/* Section Title Styling */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #5A189A;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Table Styling */
+.achievement-table {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  border-collapse: collapse;
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-table th, .achievement-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.achievement-table th {
+  background-color: #5A189A;
+  color: white;
+  text-transform: uppercase;
+}
+
+.achievement-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.achievement-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Images Section */
+.images-section {
+  display: flex;
+ margin-left: -220px;
+ 
+}
+
+.achievement-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #5A189A;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-image:hover {
+  transform: scale(1.1);
+}
+
+/* Styling for the image-text section */
+.image-text-section {
+  display: flex;
+  flex-direction: column; /* Stack each image-text pair vertically */
+  gap: 30px; /* Space between each image-text pair */
+  margin-top: 20px; /* Add spacing from the section above */
+}
+
+/* Each image and its text */
+.image-with-text {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  gap: 20px; /* Space between the image and text */
+  justify-content: flex-start; /* Align content to the left */
+}
+
+/* Image Styling */
+.image {
+  width: 250px; /* Adjust the size of the images */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #6A0572; /* Add a border to the images */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Text Content Styling */
+.text-content {
+  max-width: 400px; /* Optional: limit text width for better readability */
+}
+
+/* Title Styling */
+.text-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6A0572;
+  margin: 5px 0; /* Space above and below the title */
+}
+
+/* Subtitle/Paragraph Styling */
+.text-content p {
+  font-size: 14px;
+  color: #333333; /* Darker text for readability */
+  line-height: 1.5; /* Improve readability */
+}
+/* Line Separator Styling */
+.line-separator {
+  width: 100%;
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(to right, #6A0572, #FF8C00, #6A0572); /* Gradient for creativity */
+  margin: 30px 0; /* Space above and below the separator */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add Decorative Circles */
+.line-separator::before,
+.line-separator::after {
+  content: '';
+  position: absolute;
+  top: -7px; /* Center the circles vertically */
+  width: 15px; /* Diameter of the circle */
+  height: 15px;
+  border-radius: 50%;
+  background-color: #df7fe2; /* Match the gradient for harmony */
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.5); /* Glow effect */
+}
+
+.line-separator::before {
+  left: 20px; /* Position the first circle */
+}
+
+.line-separator::after {
+  right: 20px; /* Position the second circle */
+}
+
+
+
+
+/* Styling for the image-text section */
+.image-text-section {
+  display: flex;
+  flex-direction: column; /* Stack each image-text pair vertically */
+  gap: 30px; /* Space between each image-text pair */
+  margin-top: 20px; /* Add spacing from the section above */
+}
+
+/* Each image and its text */
+.image-with-text {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  gap: 20px; /* Space between the image and text */
+  justify-content: flex-start; /* Align content to the left */
+}
+
+/* Image Styling */
+.image {
+  width: 250px; /* Adjust the size of the images */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #6A0572; /* Add a border to the images */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Text Content Styling */
+.text-content {
+  max-width: 400px; /* Optional: limit text width for better readability */
+}
+
+/* Title Styling */
+.text-content h4 {
+  font-size: 20px;
+  color: #6A0572;
+  margin: 5px 0; /* Space above and below the title */
+}
+
+/* Subtitle/Paragraph Styling */
+.text-content p {
+  font-size: 14px;
+  color: #333333; /* Darker text for readability */
+  line-height: 1.5; /* Improve readability */
+}
+/* Line Separator Styling */
+.line-separator {
+  width: 100%;
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(to right, #6A0572, #FF8C00, #6A0572); /* Gradient for creativity */
+  margin: 30px 0; /* Space above and below the separator */
+  position: relative;
+  overflow: hidden;
+}
+/* Spacing between image-text entries */
+.image-text-section .image-with-text {
+  margin-bottom: 20px; /* Adjust the spacing between image-text blocks */
+}
+
+
+

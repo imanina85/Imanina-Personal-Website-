@@ -1,0 +1,176 @@
+/* Remove default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across all elements */
+}
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+  }
+  
+  /* Left Section: Logo and Title */
+  .header-left {
+    display: flex;
+    align-items: center; /* Align logo and title vertically */
+    gap: 20px; /* Space between logo and title */
+    margin-left: 30px; /* Move the entire left section to the right */
+  }
+  
+  .logo {
+    width: 75px;
+    height: auto;
+    align-items: center;
+    margin-left: -10px; /* Move the logo further left */
+  }
+  
+  .education-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    margin-right: 500px; /* Move the title further right */
+    animation: fadeIn 2s ease-out;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  /* CSS for the header and logo */
+.header-left {
+    display: flex;
+    align-items: center; /* Aligns the title and logo horizontally */
+  }
+  
+
+  
+  .title-logo {
+    width: 70px; /* Adjust the size of the logo */
+    height: auto; /* Keeps the aspect ratio */
+    margin-left: 180px; /* Adds space between the title and the logo */
+    gap: 20px;
+  }
+  
+  /* Date and Time Styling */
+#date-time {
+    position: absolute;
+    top: 150px; /* Align near the separator */
+    right: 130px; /* Matches separator's position */
+    transform: translateX(50%);
+    font-size: 17px;
+    margin-top: -100px;
+    color: rgb(125, 28, 140);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #bc84c0;
+    text-align: center;
+    line-height: 1.5; /* Add line height to space out the lines */
+}
+
+/* Styling for the day/date */
+#day-date {
+    font-size: 16px;
+}
+
+/* Styling for the time */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+    color: #0B3D91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Section Styling */
+  .achievement-display {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  /* Animated Number Styling */
+  .animated-number h2 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ff7eb3;
+    margin-top: -50px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  /* Title Styling */
+  .achievement-title h1 {
+    font-size: 2.5rem;
+    color: #4a47a3;
+    margin-top: -70px;
+  }
+  
+ 
+  
+  /* Images Styling */
+  .achievement-images {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  
+  .achievement-images img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #ff7eb3;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .achievement-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Paragraph Styling */
+  .achievement-description p {
+    font-size: 1rem;
+    color: #07080d;
+    max-width: 600px;
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 1.8;
+  }
+  

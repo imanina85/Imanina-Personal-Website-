@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My Family</title>
+  <link rel="stylesheet" href="css/primary.css">
+</head>
+<body>
+    
+
+  <!-- Header Section -->
+<header>
+  <div class="header-left">
+    <img src="images achievement/ema logo.gif.gif" alt="Family Logo" class="logo">
+    <!-- Add the logo image after the title -->
+    <img src="images achievement/logo nc.png" alt="Logo" class="title-logo">  <!-- New logo here -->
+  </div>
+    <h1 class="education-title">Primary <sup> school </sup> Achievement </h1>
+  </div>
+  
+</div>
+<!-- Date and Time will be displayed here -->
+<div id="date-time">
+    <div id="day-date"></div>
+    <div id="time"></div>
+  </div>
+  
+  <script>
+    // Function to update the date and time every second
+  function updateDateTime() {
+      const now = new Date();
+      const optionsDate = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+      };
+      const optionsTime = {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+      };
+  
+      // Set the day/date and time
+      document.getElementById('day-date').textContent = now.toLocaleDateString('en-US', optionsDate);
+      document.getElementById('time').textContent = now.toLocaleTimeString('en-US', optionsTime);
+  }
+  
+  // Update every second
+  setInterval(updateDateTime, 1000);
+  updateDateTime(); // Initialize immediately
+  </script>
+</header>
+
+ <!-- Animated Number and Title Section -->
+<section class="achievement-display">
+    <div class="animated-number">
+      <h2>1</h2>
+    </div>
+    <div class="achievement-title">
+      <h1>Vice Prefect at Year 6</h1>
+    </div>
+    
+    <!-- Images Section -->
+    <div class="achievement-images">
+      <img src="images achievement/prefect 1.jpg" alt="Achievement Image 1">
+      <img src="images achievement/prefect 2.jpg" alt="Achievement Image 2">
+      <img src="images achievement/prefect 3.jpg" alt="Achievement Image 3">
+    </div>
+  
+    <!-- Paragraph Section -->
+    <div class="achievement-description">
+      <p>In 2016, my job as a vice prefect was often to be the emcee for every program and to monitor the front gate of the school.</p>
+    </div>
+  </section>
+  
+  <!-- Animated Number and Title Section -->
+<section class="achievement-display">
+  <div class="animated-number">
+    <h2>2</h2>
+  </div>
+  <div class="achievement-title">
+    <h1>Exchange Student at Indonesia in 2015</h1>
+  </div>
+  
+  <!-- Images Section -->
+  <div class="achievement-images">
+    <img src="images achievement/indon 1.jpg" alt="Achievement Image 1">
+    <img src="images achievement/indon 2.jpg" alt="Achievement Image 2">
+    <img src="images achievement/indon 3.jpg" alt="Achievement Image 3">
+  </div>
+
+  <!-- Paragraph Section -->
+  <div class="achievement-description">
+    <p>In 2015, I was selected to join this program to Indonesia for 7 days to attend learning sessions and gather experiences in Indonesia with 3 other friends. I attended SDN Serayu. There, I learned various traditional customs of the Indonesian people and the educational system in Indonesia. I also had the opportunity to taste their traditional food. They also watch Upin and Ipin there.</p>
+  </div>
+</section>
