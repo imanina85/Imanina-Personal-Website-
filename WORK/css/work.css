@@ -1,0 +1,406 @@
+/* Remove default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across all elements */
+}
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+  }
+  
+  /* Left Section: Logo and Title */
+  .header-left {
+    display: flex;
+    align-items: center; /* Align logo and title vertically */
+    gap: 20px; /* Space between logo and title */
+    margin-left: 30px; /* Move the entire left section to the right */
+  }
+  
+  .logo {
+    width: 75px;
+    height: auto;
+    align-items: center;
+    margin-left: -10px; /* Move the logo further left */
+  }
+  
+  .education-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    margin-right: 500px; /* Move the title further right */
+    animation: fadeIn 2s ease-out;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  /* CSS for the header and logo */
+.header-left {
+    display: flex;
+    align-items: center; /* Aligns the title and logo horizontally */
+  }
+  
+
+  
+  .title-logo {
+    width: 140px; /* Adjust the size of the logo */
+    height: auto; /* Keeps the aspect ratio */
+    margin-left: 250px; /* Adds space between the title and the logo */
+  }
+  
+  /* Date and Time Styling */
+#date-time {
+    position: absolute;
+    top: 150px; /* Align near the separator */
+    right: 130px; /* Matches separator's position */
+    transform: translateX(50%);
+    font-size: 17px;
+    margin-top: -100px;
+    color: rgb(125, 28, 140);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #bc84c0;
+    text-align: center;
+    line-height: 1.5; /* Add line height to space out the lines */
+}
+
+/* Styling for the day/date */
+#day-date {
+    font-size: 16px;
+}
+
+/* Styling for the time */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+  }
+  /* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #d58fdf, #dcedc1); /* Green gradient */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+  }
+  
+
+  .work-image {
+    width: 250px;
+    height: 270px;
+    border-radius: 5px; /* Subtle rounded corners */
+    border: 5px solid #fff; /* White border for contrast */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .work-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Right Side: Content Container */
+  .content-container {
+    flex-grow: 1; /* Take up remaining space */
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .work-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Resume Button */
+  .resume-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed); /* Reverse gradient */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Section Responsiveness */
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .images-container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .work-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .content-container {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .work-description {
+      font-size: 16px;
+    }
+  
+    .resume-button {
+      font-size: 14px;
+      padding: 10px 25px;
+    }
+  }
+
+  /* My Internship Journey Section */
+.intern-journey {
+  position: relative;
+    background: linear-gradient(135deg, #ffd4a2, #6975fa); /* Gradient background */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  /* Separate containers for left and right images */
+.left-images, .right-images {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  gap: 50px; /* Space between images */
+  z-index: 10; /* Ensure images appear above other elements */
+}
+
+.left-images {
+  top: 110px; /* Adjust vertical position for the left side */
+  left: -150px; /* Adjust horizontal position for the left side */
+}
+
+.right-images {
+  top: 110px; /* Adjust vertical position for the right side */
+  right: -170px; /* Adjust horizontal position for the right side */
+}
+
+.left-images img, .right-images img {
+  width: 180px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image fits the dimensions without distortion */
+  border: 3px solid #243e94; /* Add a border with color */
+  border-radius: 10px; /* Optional: Make the corners rounded */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+  transition: transform 0.3s ease;
+}
+
+.left-images img:hover, .right-images img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Ensure the container stays beneath the images */
+.container {
+  position: relative; /* Establish a context for absolutely positioned children */
+  z-index: 1; /* Lower z-index to stay below images */
+}
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #4125a8;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    margin-top: -160px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  
+  .intern-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .intern-card:hover {
+    transform: translateY(-10px); /* Card lift effect */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .intern-card-header {
+    padding: 30px;
+    background-color: #ff7758a5;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+  }
+  
+  .company-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .intern-card-body {
+    padding: 30px;
+  }
+  
+  .intern-position {
+    font-size: 2rem;
+    color: #ff7e5f;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .intern-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .intern-job-details {
+    margin-bottom: 20px;
+    color: #3ddbe0;
+  }
+  
+  .intern-job-details h4 {
+    font-size: 1.5rem;
+    color: #ff7e5f;
+  }
+  
+  .intern-job-details ul {
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .intern-job-details li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .intern-projects {
+    margin-top: 30px;
+  }
+  
+  .intern-projects h4 {
+    font-size: 1.8rem;
+    color: #ff7e5f;
+    margin-bottom: 20px;
+  }
+  
+  .intern-project {
+    margin-bottom: 30px;
+  }
+  
+  .intern-project h5 {
+    font-size: 1.5rem;
+    color: #ff7e5f;
+  }
+  
+  .intern-project p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .intern-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+  }
+  
+  .intern-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .intern-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 2.5rem;
+    }
+  
+    .intern-position {
+      font-size: 1.8rem;
+    }
+  }
+  .task-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    padding: 15px 32px; /* Padding for button size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.task-button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My Family</title>
+  <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+    
+
+  <!-- Header Section -->
+<header>
+  <div class="header-left">
+    <img src="images work/ema logo.gif.gif" alt="Family Logo" class="logo">
+    <!-- Add the logo image after the title -->
+    <img src="images work/work icon.png" alt="Logo" class="title-logo">  <!-- New logo here -->
+  </div>
+    <h1 class="education-title">Work Station</h1>
+  </div>
+  
+</div>
+<!-- Date and Time will be displayed here -->
+<div id="date-time">
+    <div id="day-date"></div>
+    <div id="time"></div>
+  </div>
+  
+  <script>
+    // Function to update the date and time every second
+  function updateDateTime() {
+      const now = new Date();
+      const optionsDate = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+      };
+      const optionsTime = {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+      };
+  
+      // Set the day/date and time
+      document.getElementById('day-date').textContent = now.toLocaleDateString('en-US', optionsDate);
+      document.getElementById('time').textContent = now.toLocaleTimeString('en-US', optionsTime);
+  }
+  
+  // Update every second
+  setInterval(updateDateTime, 1000);
+  updateDateTime(); // Initialize immediately
+  </script>
+</header>
+<div class="profile-section">
+    <!-- Left Side: Images -->
+    <div class="images-container">
+      <img src="images work/work 1.jpg" alt="Work Image 1" class="work-image">
+      <img src="images work/work 2.jpg" alt="Work Image 2" class="work-image">
+    </div>
+  
+    <!-- Right Side: Paragraph and Resume -->
+    <div class="content-container">
+      <p class="work-description">
+        Welcome to my workstation! Here, I handle various projects and assignments 
+        with creativity and dedication. Check out my resume to learn more about my 
+        experiences and skills!
+      </p>
+      <a href="docs/Imanina Resume.pdf" class="resume-button" target="_blank">Check Out My Resume</a>
+
+    </div>
+  </div>
+  <!-- My Internship Journey Section -->
+<section class="intern-journey">
+    <div class="container">
+
+      <h2 class="section-title">My Internship Journey</h2>
+
+       <!-- Left-side images -->
+       <div class="side-images left-images">
+        <img src="images work/intern 1.jpg" alt="Left Image 1">
+        <img src="images work/intern 3.jpg" alt="Left Image 2">
+        <img src="images work/intern 5.jpg" alt="Left Image 3">
+        <img src="images work/intern 7.jpg" alt="Left Image 4">
+        <img src="images work/intern 9.jpg" alt="Left Image 5">
+        <img src="images work/intern 11.jpg" alt="Left Image 6">
+    </div>
+
+    <!-- Right-side images -->
+    <div class="side-images right-images">
+        <img src="images work/intern 2.jpg" alt="Right Image 1">
+        <img src="images work/intern 4.jpg" alt="Right Image 2">
+        <img src="images work/intern 6.jpg" alt="Right Image 3">
+        <img src="images work/intern 8.jpg" alt="Right Image 4">
+        <img src="images work/intern 10.jpg" alt="Right Image 5">
+        <img src="images work/intern 12.jpg" alt="Right Image 6">
+    </div>
+
+      
+      <div class="intern-card">
+        <div class="intern-card-header">
+          <img src="images work/logo tnb.png" alt="Company Logo" class="company-logo">
+        </div>
+        <div class="intern-card-body">
+          <h3 class="intern-position">Business Support Office, Tenaga Nasional Berhad, Johor</h3>
+          <p class="intern-description">
+            During my internship at BSO, TNB, I worked on various projects that honed my skills in <strong>event management and correspondence management. </strong> 
+          </p>
+  
+          <div class="intern-job-details">
+            <h4>Key Responsibilities:</h4>
+            <ul>
+              <li>Handling file disposal records and ensuring proper tagging of files.</li>
+              <li>Assisting in the setup and organization of events, such as handling guest arrivals and managing event materials</li>
+              <li>Taking photos and videos for event montages and maintaining event-related records.</li>
+              <li>Collaborating with various units to ensure the timely processing of orders and approvals in MySSC.</li>
+            </ul>
+          </div>
+  
+          <div class="intern-projects">
+            <h4>Projects I Worked On:</h4>
+            <div class="intern-project">
+              <h5>Project 1: Organizational Chart For The Whole BSO Johor</h5>
+              <p>I created the organizational chart using all the features available on Canva. Canva is very easy to use.</p>
+              <div class="intern-image-container">
+                <!-- Button to link to 'my task' page -->
+                <a href="https://www.canva.com/design/DAGNnHT5cRM/HIBUb-AupnqGf0Kvri8jXg/edit?utm_content=DAGNnHT5cRM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                    <button class="task-button">My Task</button>
+                </a>
+            </div>
+            
+            <div class="intern-project">
+              <h5>Project 2: Slide Presentation Transition Distribution</h5>
+              <p>Prepare for the meeting requirements, which include the department transition slide. I am using the Canva software."
+
+              </p>
+              <!-- Button to link to 'my task' page -->
+              <a href="docs/BUSINESS SUPPORT OFFICE SERVICES JOHOR BAHRU, TGBS (1).pdf">
+                <button class="task-button">My Task</button>
+            </a>
+        </div>
+            <div class="intern-project">
+              <h5>Project 3: Video Program Saringan Kesihatan TNB Johor</h5>
+              <p>By making videos, I can improve my skills in visual communication and information delivery. I also learn about video editing, software usage, and editing techniques that help create engaging content. Additionally, videos allow me to share stories or ideas in a more creative and engaging way for the audience.</p>
+              <!-- Button to link to 'my task' page -->
+              <a href="images work/VIDEO SARINGAN KESIHATAN.mp4">
+                <button class="task-button">My Task</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
