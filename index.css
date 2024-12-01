@@ -1,0 +1,740 @@
+/* Header styling */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+}
+/* Primary School Slider */
+.primary-slider {
+    width: 100%;
+    overflow: hidden;  /* Hide images that are not visible */
+    margin-top: 20px;  /* Space from previous section */
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1s ease;  /* Smooth transition for sliding */
+  }
+  
+  /* Each slide takes up the full width of the container */
+  .slide {
+    min-width: 100%;  /* Make each image take up full width */
+    display: flex;
+    justify-content: center;  /* Center images horizontally */
+  }
+  
+  /* Updated image styling */
+  .slide img {
+    width: 100%;  /* Set the image width to 100% of the container */
+    height: 320px; /* Adjust the height to a specific value */
+    object-fit: cover;  /* Maintain image aspect ratio and cover the container */
+  }
+  
+  /* Keyframes for sliding effect */
+  @keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);  /* Show first image */
+    }
+    25% {
+        transform: translateX(-100%);  /* Slide to second image */
+    }
+    45% {
+        transform: translateX(-100%);  /* Show second image */
+    }
+    50% {
+        transform: translateX(-200%);  /* Slide to third image */
+    }
+    70% {
+        transform: translateX(-200%);  /* Show third image */
+    }
+    75% {
+        transform: translateX(-300%);  /* Slide to fourth image */
+    }
+    95% {
+        transform: translateX(-300%);  /* Show fourth image */
+    }
+    100% {
+        transform: translateX(-400%);  /* Slide to fifth image */
+    }
+  }
+  
+  /* Apply the animation to the slider */
+  .slider {
+    animation: slideAnimation 20s infinite;  /* Total time = 5 images * 4 seconds each */
+  }
+  /* Caption Styling */
+  .caption {
+    margin-top: 20px;
+    font-size: 15px;  /* Increase the font size for readability */
+    color: #322ea5;  /* Soft color for the caption */
+    font-style: italic;  /* Make the caption stand out */
+    line-height: 0.5; /* Adjust the line height as needed */
+    max-width: 80%;  /* Optional: Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  /* Center the caption */
+    animation: fadeIn 2s ease-out; /* Optional: Animation to fade in */
+  }
+  
+  /* Optional: Add a fade-in effect for caption */
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+/* Logo styling */
+.logo {
+    width: 75px; /* Adjust size */
+    height: auto;
+}
+
+/* Title styling */
+header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #0B3D91;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Add hover effect */
+}
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    animation: glowZoom 3s ease-in-out infinite;
+}
+@keyframes glowZoom {
+    0% {
+        transform: scale(0.8);
+        text-shadow: 0px 0px 5px #d936a8;
+    }
+    50% {
+        transform: scale(1.2);
+        text-shadow: 0px 0px 20px #ff69b4;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0px 0px 5px #d936a8;
+    }
+}
+
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+    color: #0B3D91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Optional: Add some styling for the header and other sections */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+header h1 {
+    margin: 5;
+}
+
+/* 3 BOXES ABOUT Center the boxes */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Add more space between boxes */
+    margin-top: 100px; /* Create more space below "IN HER WORLD" */
+}
+.box-container {
+    display: flex;
+    justify-content: flex-start; /* Move boxes to the left */
+    align-items: flex-start;
+    gap: 30px; /* Space between boxes */
+    margin-top: 40px;
+    padding-left: 20px; /* Optional: Space from the page's left edge */
+}
+
+/* Styling for each box */
+.info-box {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #f0f0f0; /* Fallback background color */
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Image styling */
+.info-box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.9; /* Make image more transparent */
+    transition: opacity 0.3s ease;
+}
+
+/* Text overlay always visible */
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Align the text to the left */
+    align-items: center; /* Vertically center the text */
+    padding-left: 20px; /* Add some spacing from the left */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for better text visibility */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    z-index: 2; /* Ensure text appears above the image */
+}
+
+/* Add hover effect to overlay */
+.info-box:hover img {
+    opacity: 0.4; /* Slightly increase image visibility on hover */
+}
+
+.info-box:hover .info-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Darken the overlay on hover */
+}
+
+.info-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-box:hover {
+    transform: scale(1.1);
+}
+
+.simple-title h2 {
+    font-size: 1.5rem; /* Moderately sized title */
+    color: #333; /* Darker text color */
+    margin-bottom: 10px; /* Minimal spacing below the title */
+    font-weight: bold;
+}
+
+.simple-title p {
+    font-size: 1rem; /* Smaller size for the subtitle */
+    color: #666; /* Softer text color */
+    margin: 0; /* No extra margins */
+    line-height: 1.4; /* Slightly better readability */
+}
+
+/* Adjust "Explore More" Section */
+.simple-title {
+    text-align: center;
+    margin-top: -20px; /* Reduce gap between banner and "Explore More" */
+    margin-bottom: 20px;
+}
+.simple-title h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.simple-title p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Info Boxes Section */
+.info-boxes {
+    display: flex;
+    justify-content: space-around; /* Spread boxes evenly */
+    padding: 20px;
+}
+.info-box {
+    width: 30%; /* Adjust width of boxes */
+    height: 200px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-box p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: center;
+    
+    color: #dac6c6;
+}
+/* Info Boxes Container */
+.info-boxes {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 60px; /* Space between boxes */
+    margin-top: 5px; /* Add space above the boxes */
+}
+
+/* Individual Info Box Styling */
+.info-box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the box */
+}
+
+/* Info Box Overlay */
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    color: white;
+    width: 100%;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* News Section Styling */
+.news-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* News Box Styling */
+.news-box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    flex: 1;
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.news-content {
+    flex: 2;
+    text-align: left;
+}
+
+.news-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #FF6347;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #FF4500;
+}
+
+/* Header Section */
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.news-header .logo img {
+    height: 50px;
+}
+
+.news-header .news-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.news-header .news-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.news-header .news-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* News Content Section */
+.news-content-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.news-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.news-body {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.news-body a.related-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background-color: #007BFF;
+    padding: 50px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.news-body a.related-link:hover {
+    background-color: #0056b3;
+}
+/* News Section Styling */
+.news-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* News Box Styling */
+.news-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    flex: 1;
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.news-content {
+    flex: 2;
+    text-align: left;
+}
+
+.news-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #FF6347;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #FF4500;
+}
+
+/* Header Section */
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.news-header .logo img {
+    height: 50px;
+}
+
+.news-header .news-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.news-header .news-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.news-header .news-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.news-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.news-footer .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.news-footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.news-footer .social-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Modern Footer Styling */
+.modern-footer {
+    background: linear-gradient(45deg, #4b0082, #6a5acd); /* Gradient background */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffd700; /* Gold underline */
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+.footer-about p,
+.footer-contact p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 25px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+.footer-bottom a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+/* Keyframes for sliding animation */
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
