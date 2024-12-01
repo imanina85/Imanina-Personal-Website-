@@ -1,0 +1,352 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/about me.css">
+  <style>
+
+  /* Dropdown container */
+  /* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+li {
+  position: relative;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 50; /* Ensure it appears in front */
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li {
+  padding: 10px;
+  white-space: nowrap;
+}
+.dropdown-menu li a {
+  color: black;
+}
+.content {
+  background-color: lightblue;
+  padding: 20px;
+  position: relative;
+  z-index: 0; /* Ensure it stays behind the dropdown */
+}
+      .dropdown {
+          position: relative;
+          display: display outside;
+      }
+
+/* Dropdown content (hidden by default) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 10;
+      }
+/* Links inside the dropdown */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+/* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown content when hovering over the dropdown */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }        
+/* Change the color of the dropdown link on hover */
+      .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+      }
+  </style>
+<body>
+
+<!-- Header Section -->
+  <header>
+      <img src="images about me/ema logo.gif.gif" alt="Logo" class="logo">
+      <div class="animated-about">
+        <img src="images about me/cartoon 3.png" alt="Cartoon Icon" class="about-icon">
+        <h1>ABOUT ME</h1>
+    </div>
+    <nav>
+        <ul>       
+  </header>
+  <!-- Separator Line -->
+
+<div class="right-separator"></div>
+
+<!-- Date and Time will be displayed here -->
+<div id="date-time">
+  <div id="day-date"></div>
+  <div id="time"></div>
+</div>
+
+<script>
+  // Function to update the date and time every second
+function updateDateTime() {
+    const now = new Date();
+    const optionsDate = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+    const optionsTime = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    };
+
+    // Set the day/date and time
+    document.getElementById('day-date').textContent = now.toLocaleDateString('en-US', optionsDate);
+    document.getElementById('time').textContent = now.toLocaleTimeString('en-US', optionsTime);
+}
+
+// Update every second
+setInterval(updateDateTime, 1000);
+updateDateTime(); // Initialize immediately
+</script>
+<!-- Quotes of the Day Section -->
+<div class="quotes-section">
+  <div class="quotes-title">Quotes of the Day</div>
+  <img src="images about me/albert.jpg" alt="Quote Image" class="quote-image">
+  <div class="quote-subtitle">"The only source of knowledge is experience."</div>
+  <div class="video-container">
+    <div class="quotes-title">Video of the Day</div>
+      <video class="quote-video" loop autoplay muted>
+          <source src="images about me/motivasi.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+<!-- New Music of the Day content -->
+<div class="music1">
+  <h2>My Favourite Song</h2>
+  <div class="music-content">
+      <img src="images about me/pulang.jpg" alt="Music Cover" class="music-cover">
+      <div class="music-info">
+          <p class="song-title">Pulang - Insomniacks</p>
+          <div class="music-controls">
+              <button onclick="playmusic1()">Play</button>
+              <button onclick="stopmusic1()">Stop</button>
+          </div>
+          <audio id="music-player1" src="images about me/pulang.mp3"></audio>
+  </div>
+</div>
+<div class="music2"></div>
+<div class="music-content">
+  <img src="images about me/8letters.png" alt="Music Cover" class="music-cover">
+  <div class="music-info">
+      <p class="song-title">8 Letters - WhyDontWe</p>
+      <div class="music-controls">
+          <button onclick="playmusic2()">Play</button>
+          <button onclick="stopmusic2()">Stop</button>
+      </div>
+      <audio id="music-player2" src="images about me/8lagu.mp3"></audio>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+function playmusic1() {
+    const player = document.getElementById('music-player1');
+    player.play();
+}
+
+function stopmusic1() {
+    const player = document.getElementById('music-player1');
+    player.pause();
+    player.currentTime = 0; // Reset to the start
+}
+
+</script>
+<script>
+  function playmusic2() {
+      const player = document.getElementById('music-player2');
+      player.play();
+  }
+  
+  function stopmusic2() {
+      const player = document.getElementById('music-player2');
+      player.pause();
+      player.currentTime = 0; // Reset to the start
+  }
+  
+  
+  
+  </script>
+<!-- Creative Title for Section -->
+<div class="section-title">
+  <h2>Let's Get to Know Me</h2>
+</div>
+
+<!-- Image container -->
+<div class="image-container">
+    <div class="image-item">
+        <img src="images about me/ema left.jpg" alt="Image 1" class="about-image">
+        <h3 class="image-subtitle">SMPP 2023/2024</h3>
+    </div>
+    <div class="image-item">
+        <img src="images about me/ema center.jpg" alt="Image 2" class="about-image">
+        <h3 class="image-subtitle">Dancer Kaswara</h3>
+    </div>
+    <div class="image-item">
+        <img src="images about me/ema right.jpg" alt="Image 3" class="about-image">
+        <h3 class="image-subtitle">PMDS 2023/2024</h3>
+    </div>
+</div>
+
+<!-- Creative Title for Section -->
+<div class="section-title">
+  <h3>My Biodata</h3>
+</div>
+
+<table>
+  <tr>
+      <th>Name</th>
+      <td>Nur Imanina Binti Mohd Sapiron</td>
+  </tr>
+  <tr>
+      <th>Age</th>
+      <td>20 years</td>
+  </tr>
+  <tr>
+      <th>Date of Birth</th>
+      <td>08 May 2004</td>
+  </tr>
+  <tr>
+      <th>Gender</th>
+      <td>Female</td>
+  </tr>
+  <tr>
+      <th>Place</th>
+      <td>Kempas, Johor Bahru</td>
+  </tr>
+  <tr>
+      <th>Hobbies</th>
+      <td>
+          <ol>
+              <li>Reading</li>
+              <li>Colouring</li>
+              <li>Watching K-drama</li>
+          </ol>
+      </td>
+  </tr>
+  
+  <!-- New Rows -->
+  <tr>
+      <th>Favorite Subject</th>
+      <td>IMD 318</td>
+  </tr>
+  <tr>
+      <th>Target Result</th>
+      <td>4.0</td>
+  </tr>
+
+  <!-- Merged Row -->
+  <tr>
+      <th colspan="2">"Good Food, Good Mood</th>
+  </tr>
+</table>
+
+  
+</table>
+</div>
+<!-- Creative Title for Section -->
+<div class="section-title">
+  <h4>Fun Facts About Me</h4>
+</div>
+
+
+  <div class="favourite-container">
+      <div class="favourite-section">
+          <p><b><i class="fa-solid fa-utensils"></i> My Favourite <sub>Foods</sub></b></p>
+          <ol>
+              <li><i class="fa-solid fa-bowl-rice"></i> Spaghetti Carbonara</li>
+              <li><i class="fa-solid fa-bread-slice"></i> Roti Canai</li>
+              <li><i class="fa-solid fa-leaf"></i> Roti Jala</li>
+          </ol>
+      </div>
+
+      <div class="favourite-section">
+        <p><b><i class="fa-solid fa-utensils"></i> My Favourite <sup>Drinks</sup></b></p>
+        <ul>
+             <li>Teh O Ice</li>
+             <li>Green Tea</li>
+             <li> 3 Layer Tea</li>
+
+</ul>
+
+    </div>
+
+      <div class="favourite-section">
+        <p><b><i class="fa-solid fa-utensils"></i> My Favourite <sub>K-drama</sub></b></p>
+        <ul class="custom-list">
+            <li><i class="fa-solid fa-bowl-rice"></i> Penthouse </li>
+            <li><i class="fa-solid fa-bread-slice"></i>True Beauty</li>
+            <li><i class="fa-solid fa-leaf"></i>The Legend of The Blue Sea</li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+<div class="section-title">
+  <h5>My Favourite Things</h5>
+</div>
+<div class="image-map-container">
+  <img src="images about me/image map.jpeg" alt="Image Map" usemap="#example-map" class="main-image">
+
+  <map name="example-map">
+      <area shape="rect" coords="361,634,3,16" href="https://www.disneystore.com/characters/pixar/lotso/" alt="Lotso">
+      <area shape="rect" coords="713,634,363,6" href="https://www.fragrantica.com" alt="Perfume">
+      <area shape="rect" coords="355,1275,3,646" href="https://bloomthis.co/collections/flowers-below-rm-100?srsltid=AfmBOopSBPfuRcf3pzhE0gYyTsMOhTwXeTqAxevmqMt_6XUeK5A8y6CR" alt="Bouquet">
+      <area shape="rect" coords="363,649,717,1275" href="https://my.pandora.net/en/search/?q=ring&search-button=&lang=en_MY&sz=10" alt="Image 4">
+  </map>
+</div>
+<!-- Creative Title for Section -->
+<div class="section-title">
+  <h5>My Social Media</h5>
+</div>
+<div class="social-icons">
+  <!-- Twitter -->
+  <a href="https://x.com/imaninaema?s=21" target="_blank">
+      <img src="images about me/x.png" alt="Twitter" class="social-icon">
+  </a>
+  
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/imanina.ema/profilecard/?igsh=MWxrempoZjVlaXptcg==" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" class="social-icon">
+  </a>
+  
+  <!-- YouTube -->
+  <a href="https://youtube.com/@nurimaninaim?si=NzCuJXLKFxDcOEWt" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="social-icon">
+  </a>
+
+

@@ -1,0 +1,734 @@
+/* Header styling */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 0.9), rgba(217, 54, 168, 0.9), rgba(255, 105, 180, 0.9));
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for contrast */
+}
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Adjust size */
+    margin-left: -10px; /* Move the logo further left */
+    height: auto;
+}
+
+/* Title styling */
+header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #0B3D91;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Add hover effect */
+}
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    animation: glowZoom 3s ease-in-out infinite;
+}
+
+
+/* Background main/ General body styling */
+body {
+    font-family: "Merriweather", cursive, sans-serif;
+    background-color: #E3D5FF;
+    color: #0B3D91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Optional: Add some styling for the header and other sections */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+header h1 {
+    margin: 5;
+}
+
+/* Vertical separator line on the right */
+.right-separator {
+    position: absolute; /* Fix it to the right side */
+    top: 130px; /* Move further down (adjust value for more spacing below the header) */
+    right: 260px; /* Move slightly to the left from the edge */
+    width: 5px; /* Line width */
+    height: calc(100% - -1340px); /* Extend further down (adjust value as needed) */
+    background: linear-gradient(180deg, rgba(152, 79, 219, 1), rgba(217, 54, 168, 1), rgba(255, 105, 180, 1)); /* Gradient effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add glow effect */
+    z-index: 0; /* Ensure it's above other elements */
+    border-radius: 3px; /* Slightly rounded edges */
+}
+
+/* Date and Time Styling */
+/* Date and Time Styling */
+#date-time {
+    position: absolute;
+    top: 150px; /* Align near the separator */
+    right: 130px; /* Matches separator's position */
+    transform: translateX(50%);
+    font-size: 17px;
+    color: rgb(125, 28, 140);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #bc84c0;
+    text-align: center;
+    line-height: 1.5; /* Add line height to space out the lines */
+}
+
+/* Styling for the day/date */
+#day-date {
+    font-size: 16px;
+}
+
+/* Styling for the time */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Container for About Me text and image */
+.animated-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Cartoon icon styling */
+.about-icon {
+    width: 70px; /* Adjust the size as needed */
+    margin-right: 10px;
+    animation: slideInOut 10s ease-in-out infinite;
+}
+
+/* About Me text styling */
+.animated-about h1 {
+    font-size: 2.5rem;
+    color: white;
+    animation: slideInOut 10s ease-in-out infinite;
+    white-space: nowrap;
+}
+
+/* Slide in and out animation */
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+/* Quotes Section Styling */
+.quotes-section {
+    position: absolute;
+    top: 240px; /* Adjust to place it below the time section */
+    right: 17px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Title of Quotes */
+.quotes-title {
+    font-size: 18px;
+    right: 300px;
+    top: 220px;
+    margin-bottom: 10px;
+    color: #353171;
+}
+/* Quote Image Styling */
+.quote-image {
+    width: 80%;
+    max-width: 100px;
+    height: auto;
+    margin: 5px auto;
+    border: 5px solid #353171; /* Adds a golden border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    padding: 5px; /* Adds space inside the border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition for hover effects */
+}
+
+/* Add a hover effect to make the image stand out */
+.quote-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow on hover */
+}
+
+
+/* Quote Subtitle */
+.quote-subtitle {
+    font-size: 10.5px;
+    color: #2592d7;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* Video Styling */
+.video-container {
+    margin-top: 48px;
+}
+
+.quote-video {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+/* Video Subtitle Styling */
+.video-title {
+    font-size: 18 px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    color: #0B3D91;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Content Section for About Me */
+.content-about-me {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    margin-top: 5px;
+    left: 20px
+  
+}
+
+/* Creative Title Styling */
+.section-title h2 {
+    font-size: 20px;
+    color: #0B3D91; /* Color for the title */
+    font-weight: bold;
+    right: 130px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 1), rgba(217, 54, 168, 1), rgba(255, 105, 180, 1)); /* Gradient underline */
+    border-radius: 5px;
+}
+
+.section-title h2::after {
+    content: '✨';
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 2em;
+}
+
+/* Centered Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+   
+}
+
+/* Image Styling */
+
+/* Title Styling */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #0B3D91;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container for the images */
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns images to the left */
+    gap: 20px; /* Spacing between the images */
+    margin-top: 30px;
+    padding-left: 350px; /* Moves the images more to the left from the edge */
+    width: 100%; /* Ensures the container uses full width */
+}
+
+/* Styling for each image item */
+.image-item {
+    text-align: center;
+}
+
+/* Image Styling with Border */
+.about-image {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    border: 3px solid #a453bc; /* Example border color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+    object-fit: cover; /* Ensures the image fits inside the square without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/* Subtitle Styling */
+.image-subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #0B3D91;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title for the Biodata Section */
+.biodata-title {
+    text-align: absolute;
+    font-size: 18px;
+    color: #791f94; /* Purple color */
+    font-family: 'Arial', sans-serif;
+    left: -500px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+/* Table Styling */
+table {
+    width: 60%; /* Reduce width to make the table narrower */
+    margin-left: -250px; /* Make sure the table aligns to the left */
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 2px solid #ef7ee8; /* Bright Blue */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #9d229f; /* Dark Blue */
+    color: white;
+    text-align: center; /* Center text horizontally in header cells */
+    vertical-align: middle; /* Center text vertically in header cells */
+}
+
+/* Prevent the answer part from stretching too wide */
+td {
+    max-width: -110px; /* Set a maximum width for the answer cells */
+    word-wrap: break-word; /* Ensure long words are wrapped within the cell */
+}
+
+
+
+.music1 {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #353171;;
+
+}
+
+.music-content {
+    display: absolute;
+    align-items: center;
+}
+
+.music-cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.music-controls button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
+
+.music-controls button:active {
+    background-color: #003f7f;
+}
+/* Creative Title Styling */
+.section-title h3 {
+    font-size: 20px;
+    color: #0B3D91; /* Color for the title */
+    font-weight: bold;
+    right: 130px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h3::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 1), rgba(217, 54, 168, 1), rgba(255, 105, 180, 1)); /* Gradient underline */
+    border-radius: 5px;
+}
+
+.section-title h3::after {
+    content: '✨';
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 2em;
+}
+
+/* Creative Title Styling */
+.section-title h4 {
+    font-size: 20px;
+    color: #0B3D91; /* Color for the title */
+    font-weight: bold;
+    right: 130px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h4::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 1), rgba(217, 54, 168, 1), rgba(255, 105, 180, 1)); /* Gradient underline */
+    border-radius: 5px;
+}
+
+.section-title h4::after {
+    content: '✨';
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 2em;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    margin: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.fun-facts h2 {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Container for Favourite Sections */
+.favourite-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 30px; /* Add spacing between items */
+    margin-left: -250px; /* Move the entire container to the left */
+}
+
+/* Favourite Section Styling */
+.favourite-section {
+    flex: 1; /* Make both sections take equal space */
+    padding: 10px;
+    border: 1px solid #9d14b6;
+    border-radius: 8px;
+    background: #f386df;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favourite-section p {
+    color: #3b3782;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    text-align: center; /* Center the titles */
+}
+
+/* Ordered, Unordered, and Custom Lists */
+ul {
+    list-style-type: circle;
+    position: relative; /* Allows for positioning relative to the normal flow */
+    right: -20px; /* Moves the list to the right */
+    top: 30px;
+    display: block;
+}
+
+/* Table styles for ordered list */
+table td ol {
+    margin: 0; /* Removes extra margins */
+    padding-left: 40px; /* Adds consistent left padding */
+}
+
+table td ol li {
+    margin: 0; /* Ensures no extra space between list items */
+}
+
+
+.custom-list li::marker {
+    content: '📺';
+    color: #FFD700; /* Gold color */
+}
+/* For lists inside .favourite-section */
+.favourite-section ul {
+    list-style-type: circle;  /* Ensures the circle marker appears */
+    display: block;
+    
+}
+
+.music2 {
+    margin-top: 60px;
+    font-size: 12px;
+    color: #353171;;
+
+}
+
+.music-content {
+    display: absolute;
+    align-items: center;
+}
+
+.music-cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.music-controls button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
+
+.music-controls button:active {
+    background-color: #003f7f;
+}
+
+.music3 {
+    margin-bottom: 60px;
+    font-size: 12px;
+    color: #353171;;
+
+}
+
+.music-content {
+    display: absolute;
+  
+}
+
+.music-cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.music-info {
+    display: absolute;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.music-controls button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
+
+.music-controls button:active {
+    background-color: #003f7f;
+}
+
+
+/* * Creative Title Styling */ 
+.section-title h5 {
+    font-size: 20px;
+    color: #0B3D91; /* Color for the title */
+    font-weight: bold;
+    right: 130px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h5::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(152, 79, 219, 1), rgba(217, 54, 168, 1), rgba(255, 105, 180, 1)); /* Gradient underline */
+    border-radius: 5px;
+}
+
+.section-title h5::after {
+    content: '✨';
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 2em;
+}
+/* Image Map Styling */
+.image-map-container {
+    position: relative; /* Use relative for the container */
+    margin-top: 50px; /* Adjust as necessary */
+}
+
+.main-image {
+    position: relative; /* Enables left and top positioning */
+    max-width: 200px; /* Resize the image */
+    height: auto;
+    left: -130px; /* Moves the image slightly to the left */
+    top: -70px; /* Moves the image slightly upwards */
+    border: 2px solid #9d14b6; /* Optional styling */
+    border-radius: 8px; /* Optional styling */
+}
+
+/* Optional: Styling clickable areas */
+area {
+    outline: 2px dashed transparent; /* Change to visible color for debugging */
+}
+
+area:hover {
+    outline: 2px dashed #f386df; /* Hover effect for areas */
+}
+
+/* Style for the social media container */
+.social-media {
+    margin-top: 100px;
+}
+
+/* Style for the social media icons */
+.social-icons {
+    display: flex;  /* Change from 'absolute' to 'flex' for proper alignment */
+    gap: 70px;  /* Adjust the space between icons */
+    margin-top: -15px;
+    margin-left: -250px;  /* Align icons further to the left */
+    padding-left: 0;
+    margin-bottom: 50 px;
+}
+
+/* Style for individual social media icons */
+.social-icon {
+    width: 50px;  /* Make the icons smaller */
+    height: 50px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect to enlarge the icons */
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+

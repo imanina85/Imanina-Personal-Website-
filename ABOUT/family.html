@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My Family</title>
+  <link rel="stylesheet" href="css/about my family.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+      <img src="images about my family/ema logo.gif" alt="Family Logo" class="logo">
+      <div class="animated-about">
+        <img src="images about my family/family icon2.png" alt="Family Icon" class="about-icon">
+        <h1>My Family</h1>
+    </div>
+    <!-- Back Button in Header -->
+    <a href="about me.html" class="back-button">
+      &#8592; Back
+  </a>
+    <!-- Date and Time will be displayed here -->
+<div id="date-time">
+    <div id="day-date"></div>
+    <div id="time"></div>
+  </div>
+  
+  <script>
+    // Function to update the date and time every second
+  function updateDateTime() {
+      const now = new Date();
+      const optionsDate = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+      };
+      const optionsTime = {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+      };
+  
+      // Set the day/date and time
+      document.getElementById('day-date').textContent = now.toLocaleDateString('en-US', optionsDate);
+      document.getElementById('time').textContent = now.toLocaleTimeString('en-US', optionsTime);
+  }
+  
+  // Update every second
+  setInterval(updateDateTime, 1000);
+  updateDateTime(); // Initialize immediately
+  </script>
+  </header>
+
+<!-- Family Slideshow Section -->
+<div class="family-slideshow-section">
+  
+  <div class="slideshow">
+    <div class="slides">
+      <img src="images about my family/fam2.jpg" alt="Family Member 1" class="slide-img">
+      <img src="images about my family/fam1.jpg" alt="Family Member 2" class="slide-img">
+      <img src="images about my family/fam3.jpg" alt="Family Member 3" class="slide-img">
+    </div>
+  </div>
+</div>
+<div class="caption animated-caption">
+  <p>2023 & 2024's Eid-ul Fitr</p>
+</div>
+<!-- Add some space under the caption -->
+<div class="caption-paragraph">
+  <p>My family is my greatest source of love and support. We share a bond built on trust, laughter, and kindness. My parents are my role models, always guiding me with wisdom and patience. My siblings bring joy and warmth into my life, and together we create cherished memories that last a lifetime. I am truly grateful for each of them, as they make my world a brighter and happier place.</p>
+</div>
+
+<div class="caption animated-caption">
+  <p>Meet My Family</p>
+</div>
+
+<div class="family-boxes-container">
+  <!-- First Box -->
+  <div class="family-box">
+      <img src="images about my family/ayah.jpg" alt="Family 1" class="family-image">
+      <div class="family-info">
+          <h3 class="family-title">My Lovely Dad</h3>
+          <h4 class="family-subtitle1">"A father doesn't tell you that he loves you. He shows you."</h4>
+      </div>
+  </div>
+
+  <!-- Second Box -->
+  <div class="family-box">
+      <img src="images about my family/ibu.jpg" alt="Family 2" class="family-image">
+      <div class="family-info">
+          <h3 class="family-title">My Lovely Mom</h3>
+          <h4 class="family-subtitle1">"A mother's love is endless, unconditional, and forever."
+          </h4>
+      </div>
+  </div>
+
+  <!-- Third Box (Title and subtitle under the image) -->
+  <div class="family-box">
+      <img src="images about my family/kakak.jpg" alt="Family 3" class="family-image">
+      <div class="family-info">
+          <h3 class="family-title">My Sister</h3>
+          <h4 class="family-subtitle1">24 Years Old</h4>
+          <h4 class="family-subtitle2">'My third banker'</h4>
+      </div>
+  </div>
+
+  <!-- Fourth Box (Title and subtitle under the image) -->
+  <div class="family-box">
+      <img src="images about my family/ema.jpg" alt="Family 4" class="family-image">
+      <div class="family-info">
+          <h3 class="family-title">Me as second child</h3>
+          <h4 class="family-subtitle1">20 Years Old</h4>
+          <h4 class="family-subtitle2">'Lotso4Life'</h4>
+      </div>
+  </div>
+
+  <!-- Fifth Box (Title and subtitle under the image) -->
+  <div class="family-box">
+      <img src="images about my family/adik.jpg" alt="Family 5" class="family-image">
+      <div class="family-info">
+          <h3 class="family-title">My Brother</h3>
+          <h4 class="family-subtitle1">14 Years Old</h4>
+          <h4 class="family-subtitle2">'Love puzzle and lego'</h4>
+      </div>
+  </div>
+</div>
+
+
+
+  <!-- <div class="content"> -->
+    <!-- <p> -->
+      <!-- Family is the heart of our happiness. We share laughter, memories, and stories.  -->
+    <!-- </p> -->
+  <!-- </div> -->
+
+  
+</body>
+</html>
